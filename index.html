@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación Chilena Copa America 2024</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/utils.js"></script>
+    <script src="js/form.js"></script>
+    <script type="text/javascript" src="http://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.x3dom.org/download/x3dom.css">
+</head>
+
+<body>
+    <h3>Formación Chilena Copa America 2024</h3>
+    <div id="playerSelection">
+        <p>
+            <em>Carga los jugadores:</em>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="loadPlayersFromJson()">Cargar desde JSON</button>
+        </p>
+    </div>
+    <div id="formContainer" style="display: none;">
+        <form id="formationForm" onsubmit="handleSubmit(event)">
+            <!-- Form fields will be appended here by JavaScript -->
+        </form>
+    </div>
+
+    <x3d width="1000px" height="600px">
+        <scene>
+            <transform scale="3 3 3">
+                <spotLight location="0 10 0" direction="0 -1 0" intensity="0.5" beamWidth="0.785"></spotLight>
+
+
+                <!-- Campo de juego -->
+                <shape>
+                    <appearance>
+                        <material diffuseColor="0 0.5 0" />
+                    </appearance>
+                    <box size="100 0.1 60" />
+                </shape>
+
+                <!-- Jugadores -->
+                <!-- Arquero -->
+                <transform id="player-0-transform" translation="40 0 0">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-0-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                    </billboard>
+
+                </transform>
+
+                <!-- Defensores -->
+                <!-- Defensor 1 -->
+                <transform id="player-1-transform" translation="15 0 20">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-1-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Defensor 2 -->
+                <transform id="player-2-transform" translation="20 0 5">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-2-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Defensor 3 -->
+                <transform id="player-3-transform" translation="20 0 -5">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-3-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Defensor 4 -->
+                <transform id="player-4-transform" translation="15 0 -20">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-4-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Centrocampistas -->
+                <!-- Centrocampista 1 -->
+                <transform id="player-5-transform" translation="-10 0 20">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-5-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Centrocampista 2 -->
+                <transform id="player-6-transform" translation="0 0 0">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-6-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Centrocampista 3 -->
+                <transform id="player-7-transform" translation="-10 0 -20">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-7-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Delanteros -->
+                <!-- Delantero 1 -->
+                <transform id="player-8-transform" translation="-35 0 -15">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-8-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Delantero 2 -->
+                <transform id="player-9-transform" translation="-40 0 0">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-9-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+                <!-- Delantero 3 -->
+                <transform id="player-10-transform" translation="-35 0 15">
+                    <billboard axisOfRotation="0 0 0">
+                        <shape>
+                            <appearance>
+                                <material diffuseColor="1 0 0" />
+                            </appearance>
+                            <sphere radius="2" />
+                        </shape>
+                        <transform id="player-10-text" translation="0 3 0">
+                            <shape>
+                                <appearance>
+                                    <material diffuseColor="1 1 1" />
+                                </appearance>
+                                <text string="" solid="false" />
+                            </shape>
+                        </transform>
+                </transform>
+                </billboard>
+
+
+                <!-- Campo -->
+
+
+                <!-- Arco izquierdo -->
+                <transform translation="-50 2.5 -5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="5" radius="0.25" solid="false" /> <!-- Poste 1 -->
+                    </shape>
+                </transform>
+
+                <transform translation="-50 2.5 5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="5" radius="0.25" solid="false" /> <!-- Poste 2 -->
+                    </shape>
+                </transform>
+
+                <transform translation="-50 5 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="10" radius="0.25" solid="false" /> <!-- Travesaño -->
+                    </shape>
+                </transform>
+
+                <!-- Derecho-->
+                <transform translation="50 2.5 -5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="5" radius="0.25" solid="false" /> <!-- Poste 1 -->
+                    </shape>
+                </transform>
+
+                <transform translation="50 2.5 5">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="5" radius="0.25" solid="false" /> <!-- Poste 2 -->
+                    </shape>
+                </transform>
+
+                <transform translation="50 5 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="10" radius="0.25" solid="false" /> <!-- Travesaño -->
+                    </shape>
+                </transform>
+
+
+                <!-- Linea central -->
+
+                <transform translation="0 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="60" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Lineas del borde -->
+
+                <transform translation="0 0 -30" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="100" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="0 0 30" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="100" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-50 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="60" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="50 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="60" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Area derecha -->
+                <transform translation="35 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="30" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="42.5 0 15" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="15" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="42.5 0 -15" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="15" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Area izquierda -->
+
+                <transform translation="-35 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="30" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-42.5 0 15" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="15" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-42.5 0 -15" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="1 1 1" />
+                        </appearance>
+                        <cylinder height="15" radius="0.25" solid="false" />
+                    </shape>
+                </transform>
+                <!-- Estadio -->
+
+                <!-- Grada frente -->
+                <transform translation="0 0 -33" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 3 -36" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 6 -39" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 9 -42" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 12 -45" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 15 -48" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="0 18 -51" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 100 3" solid="false" />
+                    </shape>
+                </transform>
+                <!-- Grada Lateral 1 -->
+
+                <transform translation="-53 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-56 3 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-59 6 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+
+                <transform translation="-62 9 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+
+                <transform translation="-65 12 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="-68 15 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="-71 10.5 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 21" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Grada lateral 2 -->
+
+                <transform translation="53 0 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="56 3 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="59 6 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+
+                <transform translation="62 9 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+
+
+                <transform translation="65 12 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="68 15 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 3" solid="false" />
+                    </shape>
+                </transform>
+                <transform translation="71 10.5 0" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="3 60 21" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Estadio -->
+                <transform translation="72 15 -12" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="1 81.5 30" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="-72 15 -12" rotation="1 0 0 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="1 81.5 30" solid="false" />
+                    </shape>
+                </transform>
+
+                <transform translation="0 15 -53" rotation="0 0 1 -1.57">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="30 144 1" solid="false" />
+                    </shape>
+                </transform>
+
+                <!-- Piso -->
+
+                <transform translation="0 -1 -13">
+                    <shape>
+                        <appearance>
+                            <material diffuseColor="0.36 0.18 0.05" />
+                        </appearance>
+                        <box size="144 -1 80" solid="false" />
+                    </shape>
+                </transform>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

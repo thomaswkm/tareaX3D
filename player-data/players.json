@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Brayan Cortés",
+    "position": "Arquero"
+  },
+  {
+    "name": "Gabriel Arias",
+    "position": "Arquero"
+  },
+  {
+    "name": "Claudio Bravo",
+    "position": "Arquero"
+  },
+  {
+    "name": "Lawrence Vigouroux",
+    "position": "Arquero"
+  },
+  {
+    "name": "Vicente Reyes",
+    "position": "Arquero"
+  },
+  {
+    "name": "Guillermo Maripán",
+    "position": "Defensa"
+  },
+  {
+    "name": "Paulo Díaz",
+    "position": "Defensa"
+  },
+  {
+    "name": "Igor Lichnovsky",
+    "position": "Defensa"
+  },
+  {
+    "name": "Sebastián Vegas",
+    "position": "Defensa"
+  },
+  {
+    "name": "Matías Catalán",
+    "position": "Defensa"
+  },
+  {
+    "name": "Francisco Sierralta",
+    "position": "Defensa"
+  },
+  {
+    "name": "Enzo Roco",
+    "position": "Defensa"
+  },
+  {
+    "name": "Benjamín Kuscevic",
+    "position": "Defensa"
+  },
+  {
+    "name": "Gary Medel",
+    "position": "Defensa"
+  },
+  {
+    "name": "Gabriel Suazo",
+    "position": "Lateral"
+  },
+  {
+    "name": "Nicolás Díaz",
+    "position": "Lateral"
+  },
+  {
+    "name": "Thomas Galdames",
+    "position": "Lateral"
+  },
+  {
+    "name": "Erick Wiemberg",
+    "position": "Lateral"
+  },
+  {
+    "name": "Eugenio Mena",
+    "position": "Lateral"
+  },
+  {
+    "name": "Felipe Loyola",
+    "position": "Lateral"
+  },
+  {
+    "name": "Nicolás Fernández",
+    "position": "Lateral"
+  },
+  {
+    "name": "Óscar Opazo",
+    "position": "Lateral"
+  },
+  {
+    "name": "Mauricio Isla",
+    "position": "Lateral"
+  },
+  {
+    "name": "Erick Pulgar",
+    "position": "Pivote"
+  },
+  {
+    "name": "Claudio Baeza",
+    "position": "Pivote"
+  },
+  {
+    "name": "Williams Alarcón",
+    "position": "Pivote"
+  },
+  {
+    "name": "Rodrigo Echeverría",
+    "position": "Pivote"
+  },
+  {
+    "name": "Vicente Pizarro",
+    "position": "Pivote"
+  },
+  {
+    "name": "Ulises Ortegoza",
+    "position": "Pivote"
+  },
+  {
+    "name": "Esteban Pavez",
+    "position": "Pivote"
+  },
+  {
+    "name": "Marcelo Díaz",
+    "position": "Pivote"
+  },
+  {
+    "name": "Víctor Méndez",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Marcelino Núñez",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "César Pérez",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Pablo Galdames",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Arturo Vidal",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Diego Valdés",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Lucas Assadi",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Luciano Cabral",
+    "position": "Mediocentro"
+  },
+  {
+    "name": "Ben Brereton Díaz",
+    "position": "Extremo"
+  },
+  {
+    "name": "Alexander Aravena",
+    "position": "Extremo"
+  },
+  {
+    "name": "Jean Meneses",
+    "position": "Extremo"
+  },
+  {
+    "name": "Carlos Palacios",
+    "position": "Extremo"
+  },
+  {
+    "name": "Darío Osorio",
+    "position": "Extremo"
+  },
+  {
+    "name": "Maximiliano Guerrero",
+    "position": "Extremo"
+  },
+  {
+    "name": "Cristián Zavala",
+    "position": "Extremo"
+  },
+  {
+    "name": "Marcos Bolados",
+    "position": "Extremo"
+  },
+  {
+    "name": "Gonzalo Tapia",
+    "position": "Extremo"
+  },
+  {
+    "name": "Víctor Dávila",
+    "position": "Delantero"
+  },
+  {
+    "name": "Alexis Sánchez",
+    "position": "Delantero"
+  },
+  {
+    "name": "Diego Valencia",
+    "position": "Delantero"
+  },
+  {
+    "name": "Felipe Mora",
+    "position": "Delantero"
+  },
+  {
+    "name": "Diego Rubio",
+    "position": "Delantero"
+  },
+  {
+    "name": "Eduardo Vargas",
+    "position": "Delantero"
+  },
+  {
+    "name": "Steffan Pino",
+    "position": "Delantero"
+  }
+]

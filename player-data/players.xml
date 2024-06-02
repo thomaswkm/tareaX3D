@@ -1,0 +1,222 @@
+<Players>
+    <Player>
+        <Name>Brayan Cortés</Name>
+        <Position>Arquero</Position>
+    </Player>
+    <Player>
+        <Name>Gabriel Arias</Name>
+        <Position>Arquero</Position>
+    </Player>
+    <Player>
+        <Name>Claudio Bravo</Name>
+        <Position>Arquero</Position>
+    </Player>
+    <Player>
+        <Name>Lawrence Vigouroux</Name>
+        <Position>Arquero</Position>
+    </Player>
+    <Player>
+        <Name>Vicente Reyes</Name>
+        <Position>Arquero</Position>
+    </Player>
+    <Player>
+        <Name>Guillermo Maripán</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Paulo Díaz</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Igor Lichnovsky</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Sebastián Vegas</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Matías Catalán</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Francisco Sierralta</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Enzo Roco</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Benjamín Kuscevic</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Gary Medel</Name>
+        <Position>Defensa</Position>
+    </Player>
+    <Player>
+        <Name>Gabriel Suazo</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Nicolás Díaz</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Thomas Galdames</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Erick Wiemberg</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Eugenio Mena</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Felipe Loyola</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Nicolás Fernández</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Óscar Opazo</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Mauricio Isla</Name>
+        <Position>Lateral</Position>
+    </Player>
+    <Player>
+        <Name>Erick Pulgar</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Claudio Baeza</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Williams Alarcón</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Rodrigo Echeverría</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Vicente Pizarro</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Ulises Ortegoza</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Esteban Pavez</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Marcelo Díaz</Name>
+        <Position>Pivote</Position>
+    </Player>
+    <Player>
+        <Name>Víctor Méndez</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Marcelino Núñez</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>César Pérez</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Pablo Galdames</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Arturo Vidal</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Diego Valdés</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Lucas Assadi</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Luciano Cabral</Name>
+        <Position>Mediocentro</Position>
+    </Player>
+    <Player>
+        <Name>Ben Brereton Díaz</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Alexander Aravena</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Jean Meneses</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Carlos Palacios</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Darío Osorio</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Maximiliano Guerrero</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Cristián Zavala</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Marcos Bolados</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Gonzalo Tapia</Name>
+        <Position>Extremo</Position>
+    </Player>
+    <Player>
+        <Name>Víctor Dávila</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Alexis Sánchez</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Diego Valencia</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Felipe Mora</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Diego Rubio</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Eduardo Vargas</Name>
+        <Position>Delantero</Position>
+    </Player>
+    <Player>
+        <Name>Steffan Pino</Name>
+        <Position>Delantero</Position>
+    </Player>
+</Players>
